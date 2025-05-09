@@ -46,6 +46,13 @@ return {
         end,
         desc = 'Files Explorer',
       },
+      {
+        '<leader>bd',
+        function()
+          Snacks.bufdelete.delete(opts)
+        end,
+        desc = 'Move to next buffer',
+      },
     },
   },
 }
