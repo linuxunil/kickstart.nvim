@@ -53,6 +53,13 @@ return {
         end,
         desc = 'Move to next buffer',
       },
+      {
+        '<leader>gg',
+        function()
+          Snacks.lazygit.open(opts)
+        end,
+        desc = 'Open lazygit',
+      },
     },
   },
 }

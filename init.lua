@@ -78,7 +78,8 @@ vim.opt.confirm = true
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
-
+vim.keymap.set('i', 'jk', '<Esc>', { desc = 'Exit insert' })
+vim.keymap.set('i', 'kj', '<Esc>', { desc = 'Exit insert' })
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
